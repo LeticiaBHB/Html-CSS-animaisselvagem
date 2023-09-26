@@ -1,0 +1,141 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+body{
+    background-color: rgb(224, 236, 199);
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    max-width: 900px;
+    margin: auto;
+}
+
+header {
+        display: flex;
+        align-items: center; /* Alinhe verticalmente no centro */
+    }
+.logo{
+    border-radius: 100%;
+    border: 1px #deb887;
+}
+
+#title, .subtitle, .post_title {
+    color: #deb887;
+}
+#title{
+    font-weight: 500;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.subtitle{
+    margin-top: 30px;
+}
+a{
+    text-decoration :dotted;
+    color: #505050;
+}
+
+.post_title{
+    font-size: 16px;
+    font-style: oblique;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.post{
+    background-color: aliceblue;
+    padding: 15px;
+    border: 3px solid #deb887;
+    border-radius: 5%;
+    margin: 15px ;
+}
+
+.post_content{
+    margin: 0px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+.post_content2{
+    margin: 0px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.list_content2 {
+    list-style-type: none !important; 
+    text-decoration: none;
+    margin-bottom: 5px; 
+}
+
+.post_image{
+    margin-bottom: 15px;
+    border-radius: 20%;
+}
+
+.contacts_list {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contacts_list li a {
+    color: #deb887;
+    text-decoration: none;
+}
+
+
+
+/* Estilos específicos para telas menores, como tablets e smartphones */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    #title {
+        font-size: 32px;
+    }
+
+    .post {
+        padding: 10px;
+    }
+
+    .post_image {
+        margin-bottom: 15px;
+        max-width: 100%;
+    }
+
+    /* Transforme as células da tabela em blocos para exibi-las em colunas */
+    table tr td {
+        display: block;
+        width: 100%;
+    }
+}
+
+/* Estilos específicos para telas muito pequenas, como smartphones em modo retrato */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    #title {
+        font-size: 24px;
+    }
+
+    .post {
+        padding: 5px;
+    }
+
+    .contacts_list {
+        flex-direction: column; /* Organize em colunas */
+        align-items: flex-start; /* Alinhe os itens à esquerda */
+    }
+    
+    .contacts_list li {
+        margin-bottom: 10px; /* Adicione espaçamento entre os itens */
+    }
+}
+
